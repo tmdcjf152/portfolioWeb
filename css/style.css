@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#profile {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+#profile .inner {
+  width: 100%;
+}
+
+#skill {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+#skill .inner {
+  width: 100%;
+}
+
+#project {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+#project .inner {
+  width: 100%;
+}
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+#about .inner {
+  width: 100%;
+}
+
+.menu {
+  width: 40%;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: -100%;
+  bottom: 20vh;
+  transition: 1s;
+}
+.menu.on {
+  right: 0;
+}
+.menu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.menu ul li {
+  float: left;
+  margin-right: 20px;
+}
+.menu ul li a {
+  font: bold 15px/1 "apple";
+  color: #fff;
+}
+.menu ul li:hover a {
+  color: yellow;
+}
+.menu ul li.on a {
+  color: yellow;
+}
+.menu div {
+  margin-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+.menu div strong {
+  font-size: 40px;
+  color: #fff;
+}
+
+.btnCall {
+  width: 30px;
+  padding: 50px 0px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+  z-index: 5;
+}
+.btnCall::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 57%;
+  left: 0;
+  transition: all 0.5s;
+  transform: rotate(45deg);
+}
+.btnCall::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 57%;
+  left: 0;
+  transition: all 0.5s;
+  transform: rotate(-45deg);
+}
+.btnCall span {
+  display: block;
+  width: 100%;
+  height: 0px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  text-indent: -9999px;
+  transition: all 0.5s;
+}
+.btnCall.on::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 57%;
+  left: 0;
+  transition: all 0.5s;
+  transform: rotate(-45deg);
+}
+.btnCall.on::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 57%;
+  left: 0;
+  transition: all 0.5s;
+  transform: rotate(45deg);
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+#main .inner {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

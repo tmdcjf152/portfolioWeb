@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import 'reset.scss';
+@import 'page/profile';
+@import 'page/skill';
+@import 'page/project.scss';
+@import 'page/about.scss';
+@import 'page/layout.scss';
+
+#main {
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	color: #fff;
+	.inner {
+		width: 100%;
+
+
+	}
+}
