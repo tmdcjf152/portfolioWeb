@@ -6,45 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/termynal.css">    
+    <script defer src="../js/termynal.js" data-termynal-container="#termynal"></script>
+    <script defer src="js/index.js"></script>
+
     <title>Portfolio_Website_Profile</title>
 </head>
 
 <body>
     <!-- Nav Menu -->
     <section id="profile">
-        <h1>PROFILE</h1>
         <article class="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error dicta, esse aut nihil tenetur
-                quibusdam dolorem beatae at necessitatibus incidunt sed, perspiciatis dolorum pariatur eaque iusto,
-                nobis nostrum est!</p>
-        </article>
-        <a href="#" class="btnCall">
-            <span>&#60;</span>
-        </a>
 
-        <nav class="menu">
-            <ul class="btns">
-                <li>
-                    <a href="../index.html">Main</a>
-                </li>
-                <li class="on">
-                    <a href="profile.html">Profile</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="project.html">Project</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-            <div>
-                <strong>2</strong> / <span>5</span>
+            <a href="#" class="btnCall">
+                <span>&#60;</span>
+            </a>
+            <nav class="menu">
+                <ul class="btns">
+                    <li>
+                        <a href="../index.html">Main</a>
+                    </li>
+                    <li class="on">
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="skill.html">Skill</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+                <div>
+                    <strong>2</strong> / <span>5</span>
+                </div>
+            </nav>
+            <!--img Box -->
+            <div class="imgBox">
+                <video src="../img/emoji.mp4" autoplay muted></video>
             </div>
-        </nav>
+
+            <!-- Text Box -->
+            <div class="showBox">
+                <div id="termynal" data-termynal>
+                    <!-- 소개 -->
+                    <span data-ty="input">PROFILE</span>
+                    <span data-ty="input">이름 : 최승철</span>
+                    <span data-ty="input">생년월일 : 1996. 01. 05</span>
+                    <span data-ty></span>
+                    <!-- 연락처 -->
+                    <span data-ty="input">CONTACT</span>
+                    <span data-ty="input">핸드폰 : 010-8013-7313</span>
+                    <span data-ty="input">이메일: tmdcjf152@naver.com</span>
+                    <span data-ty></span>
+                    <!-- 경력사항 -->
+                    <span data-ty="input">EDUCATION</span>
+                    <span data-ty="input">2013. 10 ~ 2018. 02 육군 부사관(중사) 복무</span>
+                    <span data-ty="input">2018. 10 ~ 2021. 10 미용업계(헤어디자이너) 종사</span>
+                    <span data-ty="input">2022. 04. 04 ~ 2022. 05. 30 디코드랩 Frontend 과정 수료</span>
+                    <span data-ty></span>
+                    <!-- 자격증 -->
+                    <span data-ty="input">LICENSE</span>
+                    <span data-ty="input">미용사(일반)</span>
+                    <span data-ty="input">미용사(메이크업)</span>
+                    <span data-ty></span>
+
+                    <span data-ty="input" data-ty-prompt=">>>">우측 ">" 버튼을 클릭하시면 메뉴가 나옵니다.</span>
+                </div>
+            </div>
+        </article>
     </section>
 </body>
 

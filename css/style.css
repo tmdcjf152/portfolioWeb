@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,42 @@ a {
 }
 #profile .inner {
   width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+#profile .inner .imgBox {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+#profile .inner .imgBox video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#profile .inner .showBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+#profile .inner .showBox #termynal {
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+}
+#profile .inner .showBox #termynal::before {
+  position: absolute;
+  top: 65px;
+}
+#profile .inner .showBox #termynal span {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  margin-left: 600px;
 }
 
 #skill {
@@ -54,48 +91,55 @@ a {
   width: 100%;
 }
 
-.menu {
+body {
+  overflow: hidden;
+}
+body .menu {
   width: 40%;
   padding: 50px;
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
   right: -100%;
   bottom: 20vh;
+  opacity: 0;
+  transition: 1s;
+  z-index: 2;
+}
+body .menu.on {
+  right: 0%;
+  opacity: 1;
+  display: block;
   transition: 1s;
 }
-.menu.on {
-  right: 0;
-}
-.menu ul::after {
+body .menu ul::after {
   content: "";
   display: block;
   clear: both;
 }
-.menu ul li {
+body .menu ul li {
   float: left;
   margin-right: 20px;
 }
-.menu ul li a {
+body .menu ul li a {
   font: bold 15px/1 "apple";
   color: #fff;
 }
-.menu ul li:hover a {
+body .menu ul li:hover a {
   color: yellow;
 }
-.menu ul li.on a {
+body .menu ul li.on a {
   color: yellow;
 }
-.menu div {
+body .menu div {
   margin-top: 20px;
   font-size: 15px;
   color: white;
 }
-.menu div strong {
+body .menu div strong {
   font-size: 40px;
   color: #fff;
 }
-
-.btnCall {
+body .btnCall {
   width: 30px;
   padding: 50px 0px;
   text-align: center;
@@ -105,7 +149,7 @@ a {
   bottom: 50%;
   z-index: 5;
 }
-.btnCall::before {
+body .btnCall::before {
   content: "";
   display: block;
   width: 80%;
@@ -115,9 +159,9 @@ a {
   top: 57%;
   left: 0;
   transition: all 0.5s;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
-.btnCall::after {
+body .btnCall::after {
   content: "";
   display: block;
   width: 80%;
@@ -127,9 +171,9 @@ a {
   bottom: 57%;
   left: 0;
   transition: all 0.5s;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
-.btnCall span {
+body .btnCall span {
   display: block;
   width: 100%;
   height: 0px;
@@ -141,7 +185,7 @@ a {
   text-indent: -9999px;
   transition: all 0.5s;
 }
-.btnCall.on::before {
+body .btnCall.on::before {
   content: "";
   display: block;
   width: 80%;
@@ -151,9 +195,9 @@ a {
   top: 57%;
   left: 0;
   transition: all 0.5s;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
-.btnCall.on::after {
+body .btnCall.on::after {
   content: "";
   display: block;
   width: 80%;
@@ -163,15 +207,69 @@ a {
   bottom: 57%;
   left: 0;
   transition: all 0.5s;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
-#main {
-  width: 100vw;
+body #main {
+  width: 100%;
   height: 100vh;
   background: #000;
   color: #fff;
 }
-#main .inner {
+body #main .inner {
   width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+body #main .inner .showBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+body #main .inner .animation span {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  font-size: 100px;
+  opacity: 0;
+  -webkit-animation: hand 2s 9s normal infinite ease-in-out;
+          animation: hand 2s 9s normal infinite ease-in-out;
+}
+body #main .inner .animation p {
+  position: absolute;
+  top: 41%;
+  right: 18%;
+  font-size: 50px;
+  opacity: 0;
+  -webkit-animation: hand 2s 9s normal infinite ease-in-out;
+          animation: hand 2s 9s normal infinite ease-in-out;
+}
+
+@-webkit-keyframes hand {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes hand {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
 }/*# sourceMappingURL=style.css.map */

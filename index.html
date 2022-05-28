@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/termynal.css">
+    <script defer src="js/termynal.js" data-termynal-container="#termynal"></script>
     <script defer src="js/index.js"></script>
+
     <title>Portfolio_Website</title>
 </head>
 
 <body>
+
+    
     <!-- Nav Menu -->
     <section id="main">
-        <h1>main</h1>
         <div class="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error dicta, esse aut nihil tenetur
-                quibusdam dolorem beatae at necessitatibus incidunt sed, perspiciatis dolorum pariatur eaque iusto,
-                nobis nostrum est!</p>
-
+            <!-- Menu Button -->
             <a href="#" class="btnCall">
                 <span>&#60;</span>
             </a>
-
             <nav class="menu">
                 <ul class="btns">
                     <li class="on">
@@ -45,6 +45,38 @@
                     <strong>1</strong> / <span>5</span>
                 </div>
             </nav>
+
+            <div class="showBox">
+                <div id="termynal" data-termynal>
+                    <span data-ty="input">안녕하세요 신입개발자 최승철의 정보를 불러오고 있습니다.</span>
+                    <!-- <span data-ty="progress"></span>
+                    <span data-ty>완료!</span> -->
+                    <span data-ty></span>
+                    <span data-ty="input">프로필 불러오는중...</span>
+                    <span data-ty="progress"></span>
+                    <span data-ty>Load completed successfully.</span>
+                    <span data-ty></span>
+
+                    <span data-ty="input">스킬능력 불러오는중...</span>
+                    <span data-ty="progress"></span>
+                    <span data-ty>Load completed successfully.</span>
+                    <span data-ty></span>
+
+                    <span data-ty="input">프로젝트 불러오는중...</span>
+                    <span data-ty="progress"></span>
+                    <span data-ty>Load completed successfully.</span>
+                    <span data-ty></span>
+
+
+                    <span data-ty="input">모든 준비가 완료되었습니다.</span>
+                    <span data-ty="input" data-ty-prompt=">>>">우측 ">" 버튼을 클릭하시면 메뉴가 나옵니다.</span>
+                </div>
+            </div>
+            <div class="animation">
+                <span>&#x1F449;</span>
+                <p>CLICK!</p>
+            </div>
+
         </div>
     </section>
 </body>
