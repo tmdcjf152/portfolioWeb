@@ -1,10 +1,166 @@
-#project{
-    width: 100vw;
+#project {
+	width: 100vw;
 	height: 100vh;
 	background: #000;
-    color: #fff;
+	color: #fff;
 	.inner {
 		width: 100%;
-	}
+		height: 100%;
+		padding: 50px;
+		.showBox {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #fff;
+			padding: 20px;
+			#termynal {
+				width: 100%;
+				position: relative;
+				bottom: 50px;
+				&::before {
+					position: absolute;
+					top: 65px;
+				}
+			}
+			.tabMenu {
+				// 탭메뉴
+				input[type='radio'] {
+					display: none;
+					&:checked + label {
+						transform: scale(1.4);
+						text-decoration: underline;
+					}
+					&:hover + label {
+						transform: scale(1.4);
+					}
+				}
+				label {
+					display: inline-block;
+					padding: 20px;
+					position: relative;
+					bottom: 115px;
+					left: 100px;
+					font-size: 25px;
+					color: #fff;
+					cursor: pointer;
+					transition: 1s;
+					z-index: 2;
+				}
 
+				// 탭내용
+				// 콘테인 박스
+				.conbox {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					bottom: 100px;
+					right: 20px;
+					margin: 0 auto;
+					display: none;
+					video {
+						width: 50%;
+						height: 100%;
+						padding: 100px;
+					}
+					.projectLink {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 200px;
+						height: 50px;
+						border: 3px dashed #fff;
+						position: relative;
+						bottom: 200px;
+						left: 250px;
+					}
+					.textbox {
+						width: 53%;
+						height: 85%;
+						padding: 20px;
+						position: absolute;
+						top: 20%;
+						right: 3%;
+						color: #fff;
+						#projectTextBox {
+							.textTitle {
+								display: block;
+								font-size: 40px;
+								margin-bottom: 10px;
+							}
+						}
+						#tech {
+							margin-top: 30px;
+							.techTtitle {
+								font-size: 25px;
+								margin-bottom: 10px;
+							}
+							.techText {
+								margin-bottom: 10px;
+							}
+						}
+						#git {
+							margin-top: 30px;
+							.gitTtitle {
+								font-size: 25px;
+								margin-bottom: 10px;
+							}
+							.gitLink {
+								color: green;
+								&:hover{
+									text-decoration: underline;
+								}
+							}
+						}
+						#url {
+							margin-top: 30px;
+							.urlTtitle {
+								font-size: 25px;
+								margin-bottom: 10px;
+							}
+							.urlLink {
+								color: green;
+								&:hover{
+									text-decoration: underline;
+								}
+							}
+						}
+						#language {
+							margin-top: 30px;
+							.langTtitle {
+								font-size: 25px;
+								margin-bottom: 10px;
+							}
+							.langText {
+								margin-bottom: 10px;
+							}
+						}
+					}
+				}
+				input[id='tab01'] {
+					&:checked ~ .con1 {
+						display: block;
+					}
+				}
+				input[id='tab02'] {
+					&:checked ~ .con2 {
+						display: block;
+					}
+				}
+				input[id='tab03'] {
+					&:checked ~ .con3 {
+						display: block;
+					}
+				}
+				input[id='tab04'] {
+					&:checked ~ .con4 {
+						display: block;
+					}
+				}
+				input[id='tab05'] {
+					&:checked ~ .con5 {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }

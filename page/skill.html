@@ -6,45 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/termynal.css">
+    <script defer src="../js/termynal.js" data-termynal-container="#termynal"></script>
     <script defer src="../js/index.js"></script>
     <title>Portfolio_Website_Skill</title>
 </head>
 
 <body>
-<!-- Nav Menu -->
     <section id="skill">
-        <h1>SKILL</h1>
-        <article class="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error dicta, esse aut nihil tenetur
-                quibusdam dolorem beatae at necessitatibus incidunt sed, perspiciatis dolorum pariatur eaque iusto,
-                nobis nostrum est!</p>
-        </article>
-        <a href="#" class="btnCall">
-            <span>&#60;</span>
-        </a>
+        <div class="inner">
+            <!-- Nav Menu -->
+            <a href="#" class="btnCall">
+                <span>&#60;</span>
+            </a>
+            <nav class="menu">
+                <ul class="btns">
+                    <li>
+                        <a href="../index.html">Main</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li class="on">
+                        <a href="skill.html">Skill</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+                <div>
+                    <strong>3</strong> / <span>5</span>
+                </div>
+            </nav>
 
-        <nav class="menu">
-            <ul class="btns">
-                <li >
-                    <a href="../index.html">Main</a>
-                </li>
-                <li>
-                    <a href="profile.html">Profile</a>
-                </li>
-                <li class="on">
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li>
-                    <a href="project.html">Project</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-            <div>
-                <strong>3</strong> / <span>5</span>
+            <!-- Show Box -->
+            <div class="showBox">
+                <!-- 터미널 디자인 및 텍스트박스 -->
+                <div id="termynal" data-termynal>
+                    <span data-ty></span>
+                    <span data-ty="" class="green">SKILLS</span>
+                    <span data-ty="input">Frontend : HTML / CSS / JavaScript / Sass / React / Redux</span>
+                    <span data-ty="input">Version_Control : Git / GitHub</span>
+                    <span data-ty="input">Communication : Figma</span>
+                    <span data-ty="input">스킬 불러오는중</span>
+                    <span data-ty="progress"></span>
+                    <span data-ty class="green">Load completed successfully.</span>
+                </div>
+
+                <!-- 탭 메뉴 -->
+                <div class="tabMenu">
+                    <!-- 탭버튼 -->
+                    <input type="radio" name="tabmenu" id="tab01" checked>
+                    <label for="tab01"> HTML </label>
+                    <input type="radio" name="tabmenu" id="tab02">
+                    <label for="tab02"> CSS</label>
+                    <input type="radio" name="tabmenu" id="tab03">
+                    <label for="tab03"> JS </label>
+                    <input type="radio" name="tabmenu" id="tab04">
+                    <label for="tab04"> Sass </label>
+                    <input type="radio" name="tabmenu" id="tab05">
+                    <label for="tab05"> React</label>
+
+
+                    <!-- 탭내용 -->
+                    <div class="conbox con1">
+                        <img src="../img/HTML.jpeg" alt="HTML">
+                        <div class="textBox">
+                            <p class="html">HTML</p>
+                            <span data-ty="input">웹표준 기반 태그 사용</span>
+                            <span data-ty="input">시멘틱태그에 대한 이해</span>
+                            <span data-ty="input">웹접근성에 대한 이해 </span>
+                        </div>
+                    </div>
+                    <div class="conbox con2">
+                        <img src="../img/CSS.jpeg" alt="CSS">
+                        <div class="textBox">
+
+                            <p class="css">CSS</p>
+                            <span data-ty="input">Float, Flex 으로 레이아웃 제작 </span>
+                            <span data-ty="input">Media Query에 대한 이해</span>
+                            <span data-ty="input">애니메이션에 대한 이해 </span>
+                        </div>
+
+                    </div>
+                    <div class="conbox con3">
+                        <img src="../img/JS.jpeg" alt="JavaScript">
+
+                        <div class="textBox">
+
+                            <p class="js">JavaScript</p>
+                            <span data-ty="input">ES6이상의 문법 사용</span>
+                            <span data-ty="input">JavaScript 동작의 대한 이해</span>
+                        </div>
+                    </div>
+                    <div class="conbox con4">
+                        <img src="../img/SASS.jpeg" alt="Sass">
+                        <div class="textBox">
+
+                            <p class="sass">Sass</p>
+                            <span data-ty="input">SCSS Scope, Nesting에 대한 이해</span>
+                            <span data-ty="input">변수 선언과 연산/상속에 대한 이해</span>
+                            <span data-ty="input">가독성을 높여주는 css작성 가능 </span>
+                        </div>
+                    </div>
+                    <div class="conbox con5">
+                        <img src="../img/React.jpeg" alt="React">
+                        <div class="textBox">
+
+                            <p class="react">React</p>
+                            <span data-ty="input">기본적인 React 작동원리 이해 </span>
+                            <span data-ty="input">Redux 상태 관리에 대한 이해</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </section>
 </body>
 

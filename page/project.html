@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/termynal.css">
+    <script defer src="../js/termynal.js" data-termynal-container="#termynal"></script>
     <script defer src="../js/index.js"></script>
     <title>Portfolio_Website_Project</title>
 </head>
@@ -13,38 +15,122 @@
 <body>
     <!-- Nav Menu -->
     <section id="project">
-        <h1>PROJECT</h1>
-        <article class="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error dicta, esse aut nihil tenetur
-                quibusdam dolorem beatae at necessitatibus incidunt sed, perspiciatis dolorum pariatur eaque iusto,
-                nobis nostrum est!</p>
-        </article>
-        <a href="#" class="btnCall">
-            <span>&#60;</span>
-        </a>
+        <div class="inner">
+            <!-- Nav Menu -->
+            <a href="#" class="btnCall">
+                <span>&#60;</span>
+            </a>
+            <nav class="menu">
+                <ul class="btns">
+                    <li>
+                        <a href="../index.html">Main</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="skill.html">Skill</a>
+                    </li>
+                    <li class="on">
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+                <div>
+                    <strong>4</strong> / <span>5</span>
+                </div>
+            </nav>
 
-        <nav class="menu">
-            <ul class="btns">
-                <li>
-                    <a href="../index.html">Main</a>
-                </li>
-                <li>
-                    <a href="profile.html">Profile</a>
-                </li>
-                <li>
-                    <a href="skill.html">Skill</a>
-                </li>
-                <li class="on">
-                    <a href="project.html">Project</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-            <div>
-                <strong>4</strong> / <span>5</span>
+            <!-- Show Box -->
+            <div class="showBox">
+                <!-- 터미널 디자인 및 텍스트박스 -->
+                <div id="termynal" data-termynal>
+                </div>
+
+                <!-- 탭 메뉴 -->
+                <div class="tabMenu">
+                    <!-- 탭버튼 -->
+                    <input type="radio" name="tabmenu" id="tab01" checked>
+                    <label for="tab01"> 1 </label>
+                    <input type="radio" name="tabmenu" id="tab02">
+                    <label for="tab02"> 2</label>
+                    <input type="radio" name="tabmenu" id="tab03">
+                    <label for="tab03"> 3 </label>
+                    <input type="radio" name="tabmenu" id="tab04">
+                    <label for="tab04"> 4 </label>
+                    <input type="radio" name="tabmenu" id="tab05">
+                    <label for="tab05"> 5 </label>
+
+                    <!-- 탭내용 -->
+                    <div class="conbox con1">
+                        <video src="../img/project01.mp4" autoplay muted loop></video>
+                        <div class="textbox">
+                            <div id="projectTextBox">
+                                <span class="textTitle">BYREDO 기업형 웹사이트</span>
+                                <span class="text">
+                                    HTML / CSS /JavaScript 를 배우고 처음으로 만든 1인 Project 작품입니다.<br>
+                                    작품을 제작하면서 HTML / CSS 를 좀더 완벽하게 구사할수 있게 되었고 <br>
+                                    JavaScript에 이해도 또한 한층더 높여주는 프로젝트 였으며 <br>
+                                    Github를 이용해 배포하는 방법과 개념을 배우게 되었습니다.
+                                </span>
+                            </div>
+                            <div id="tech">
+                                <p class="techTtitle">주요기능</p>
+                                <p class="techText">
+                                    Flickr API, Youtube API, KakaoMap API<br>
+                                    메인페이지, 멤버페이지, 회원가입페이지, 갤러리페이지, 유튜브페이지, 찾아오는길페이지<br>
+                                    이미지스퀸스, Hover효과, 회원가입_조건미달시_문구표시
+                                </p>
+                            </div>
+                            <div id="git">
+                                <p class="gitTtitle">GitHub</p>
+                                <a href="https://github.com/tmdcjf152/portfolio_Corporate-site" target="blank"
+                                    class="gitLink">GitHub 주소 바로가기</a>
+                            </div>
+                            <div id="url">
+                                <p class="urlTtitle">URL</p>
+                                <a href=" https://tmdcjf152.github.io/portfolio_Corporate-site/" target="blank"
+                                class="urlLink"> URL 주소 바로가기</a>
+                            </div>
+                            <div id="language">
+                                <p class="langTtitle">Front</p>
+                                <p class="langText">JavaScript, Sass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conbox con2">
+
+                        <div class="textbox">
+                            <span class="textTitle">CSS</span>
+                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+                        </div>
+                    </div>
+                    <div class="conbox con3">
+
+                        <div class="textbox">
+                            <span class="textTitle">JavaScript</span>
+                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+                        </div>
+                    </div>
+                    <div class="conbox con4">
+
+                        <div class="textbox">
+                            <span class="textTitle">Sass</span>
+                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+                        </div>
+                    </div>
+                    <div class="conbox con5">
+
+                        <div class="textbox">
+                            <span class="textTitle">React</span>
+                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </section>
 </body>
 
