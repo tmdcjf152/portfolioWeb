@@ -56,10 +56,25 @@
 					right: 20px;
 					margin: 0 auto;
 					display: none;
-					video {
+					.visualBox {
 						width: 50%;
 						height: 100%;
-						padding: 100px;
+						video {
+							width: 91%;
+							height: 100%;
+							padding: 100px;
+							position: relative;
+							top: 100px;
+							left: 55px;
+
+						}
+						img {
+							width: 35%;
+							height: 350px;
+							position: absolute;
+							top: 350px;
+							left: 130px;
+						}
 					}
 					.projectLink {
 						display: flex;
@@ -78,7 +93,7 @@
 						padding: 20px;
 						position: absolute;
 						top: 20%;
-						right: 3%;
+						right: 0%;
 						color: #fff;
 						#projectTextBox {
 							.textTitle {
@@ -105,7 +120,7 @@
 							}
 							.gitLink {
 								color: green;
-								&:hover{
+								&:hover {
 									text-decoration: underline;
 								}
 							}
@@ -118,7 +133,7 @@
 							}
 							.urlLink {
 								color: green;
-								&:hover{
+								&:hover {
 									text-decoration: underline;
 								}
 							}

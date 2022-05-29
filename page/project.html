@@ -13,35 +13,37 @@
 </head>
 
 <body>
-    <!-- Nav Menu -->
+    
     <section id="project">
         <div class="inner">
             <!-- Nav Menu -->
-            <a href="#" class="btnCall">
-                <span>&#60;</span>
-            </a>
-            <nav class="menu">
-                <ul class="btns">
-                    <li>
-                        <a href="../index.html">Main</a>
-                    </li>
-                    <li>
-                        <a href="profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="skill.html">Skill</a>
-                    </li>
-                    <li class="on">
-                        <a href="project.html">Project</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                </ul>
-                <div>
-                    <strong>4</strong> / <span>5</span>
-                </div>
-            </nav>
+            <div id="navMenu">
+                <a href="#" class="btnCall">
+                    <span>&#60;</span>
+                </a>
+                <nav class="menu">
+                    <ul class="btns">
+                        <li>
+                            <a href="../index.html">Main</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="skill.html">Skill</a>
+                        </li>
+                        <li class="on">
+                            <a href="project.html">Project</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <strong>4</strong> / <span>5</span>
+                    </div>
+                </nav>
+            </div>
 
             <!-- Show Box -->
             <div class="showBox">
@@ -52,20 +54,29 @@
                 <!-- 탭 메뉴 -->
                 <div class="tabMenu">
                     <!-- 탭버튼 -->
+                    <!-- Tab_button 1 -->
                     <input type="radio" name="tabmenu" id="tab01" checked>
                     <label for="tab01"> 1 </label>
+                    <!-- Tab_button 2 -->
                     <input type="radio" name="tabmenu" id="tab02">
                     <label for="tab02"> 2</label>
+                    <!-- Tab_button 3 -->
                     <input type="radio" name="tabmenu" id="tab03">
                     <label for="tab03"> 3 </label>
+                    <!-- Tab_button 4 -->
                     <input type="radio" name="tabmenu" id="tab04">
                     <label for="tab04"> 4 </label>
+                    <!-- Tab_button 5 -->
                     <input type="radio" name="tabmenu" id="tab05">
                     <label for="tab05"> 5 </label>
 
                     <!-- 탭내용 -->
+                    <!-- Project 1 -->
                     <div class="conbox con1">
-                        <video src="../img/project01.mp4" autoplay muted loop></video>
+                        <div class="visualBox">
+                            <img src="../img/screen.png" alt="모니터사진">
+                            <video src="../img/project01.mp4" autoplay muted loop></video>
+                        </div>
                         <div class="textbox">
                             <div id="projectTextBox">
                                 <span class="textTitle">BYREDO 기업형 웹사이트</span>
@@ -74,6 +85,11 @@
                                     작품을 제작하면서 HTML / CSS 를 좀더 완벽하게 구사할수 있게 되었고 <br>
                                     JavaScript에 이해도 또한 한층더 높여주는 프로젝트 였으며 <br>
                                     Github를 이용해 배포하는 방법과 개념을 배우게 되었습니다.
+                                    <br>
+                                    <br>
+                                    디자인부터 레이아웃까지 스스로 만들어보면서 깨지는부분도 많았지만 <br>
+                                    스스로 문제해결을 해보면서 HTML/CSS/JavaScrip 에 좀더 익숙해진 계기가 되었습니다.<br>
+                                    부트스트랩을 사용하지 않은 순수 하드코딩으로 제작하면서 코딩에대한 확신을 주었습니다.
                                 </span>
                             </div>
                             <div id="tech">
@@ -92,7 +108,7 @@
                             <div id="url">
                                 <p class="urlTtitle">URL</p>
                                 <a href=" https://tmdcjf152.github.io/portfolio_Corporate-site/" target="blank"
-                                class="urlLink"> URL 주소 바로가기</a>
+                                    class="urlLink"> URL 주소 바로가기</a>
                             </div>
                             <div id="language">
                                 <p class="langTtitle">Front</p>
@@ -100,36 +116,122 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Project 2 -->
                     <div class="conbox con2">
-
+                        <div class="visualBox">
+                            <img src="../img/screen.png" alt="모니터사진">
+                            <video src="../img/project02.mp4" autoplay muted loop></video>
+                        </div>
                         <div class="textbox">
-                            <span class="textTitle">CSS</span>
-                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+                            <div id="projectTextBox">
+                                <span class="textTitle">MINI 기업형 웹사이트</span>
+                                <span class="text">
+                                    React 를 배우고 만든 1인 Project 작품입니다.<br>
+                                    작품을 제작하면서 React의 동작원리와 Redux를 이용해 효율적으로
+                                    상태관리하는<br> 방법을 배웠으며 HTML버전과는 다른 배포방법을 배우게 되었습니다.
+                                    <br>
+                                    <br>
+                                    BMW모터쇼를 다녀오면서 MINI만의 유니크함에 영감을 얻어 제작하게 되었습니다.<br>
+                                    디버깅으로 포트폴리오를 수정해 나아가는 과정에서 React문법과 조금더 친해지는 과정이었습니다.
+                                    React를 왜 사용하는지를 깨닳게한 프로젝트 였습니다.
+                                </span>
+                            </div>
+                            <div id="tech">
+                                <p class="techTtitle">주요기능</p>
+                                <p class="techText">
+                                    Flickr API, Youtube API, KakaoMap API<br>
+                                    메인페이지, 멤버페이지, 회원가입페이지, 갤러리페이지, 유튜브페이지, 찾아오는길페이지<br>
+                                    스크롤이벤트, 스와이프, 조건미달시_문구표시, 메인페이지 API불러오기
+                                </p>
+                            </div>
+                            <div id="git">
+                                <p class="gitTtitle">GitHub</p>
+                                <a href="https://github.com/tmdcjf152/react-portfolio" target="blank"
+                                    class="gitLink">GitHub 주소 바로가기</a>
+                            </div>
+                            <div id="url">
+                                <p class="urlTtitle">URL</p>
+                                <a href=" https://tmdcjf152.github.io/react-portfolio/#/" target="blank"
+                                    class="urlLink"> URL 주소 바로가기</a>
+                            </div>
+                            <div id="language">
+                                <p class="langTtitle">Front</p>
+                                <p class="langText">React, Redux, Sass</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- Project 3 -->
                     <div class="conbox con3">
+                        <div class="visualBox">
+                            <img src="../img/screen.png" alt="모니터사진">
+                            <video src="" autoplay muted loop></video>
+                            <div class="textbox">
+                                <div id="projectTextBox">
+                                    <span class="textTitle">제작중</span>
+                                    <span class="text">
+                                        완벽한 프로젝트로 찾아뵙겠습니다.
+                                    </span>
+                                </div>
 
-                        <div class="textbox">
-                            <span class="textTitle">JavaScript</span>
-                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="createBox">
+
                         </div>
                     </div>
+                    <!-- Project 4 -->
                     <div class="conbox con4">
+                        <div class="visualBox">
+                            <img src="../img/screen.png" alt="모니터사진">
+                            <video src="" autoplay muted loop></video>
+                            <div class="textbox">
+                                <div id="projectTextBox">
+                                    <span class="textTitle">제작중</span>
+                                    <span class="text">
+                                        완벽한 프로젝트로 찾아뵙겠습니다.
+                                    </span>
+                                </div>
 
-                        <div class="textbox">
-                            <span class="textTitle">Sass</span>
-                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="createBox">
+
                         </div>
                     </div>
+                    <!-- Project 5 -->
                     <div class="conbox con5">
+                        <div class="visualBox">
+                            <img src="../img/screen.png" alt="모니터사진">
+                            <video src="" autoplay muted loop></video>
+                            <div class="textbox">
+                                <div id="projectTextBox">
+                                    <span class="textTitle">제작중</span>
+                                    <span class="text">
+                                        완벽한 프로젝트로 찾아뵙겠습니다.
+                                    </span>
+                                </div>
 
-                        <div class="textbox">
-                            <span class="textTitle">React</span>
-                            <span class="text"> 웹 표준의 기본 개념과 시멘틱태그를 이용한 웹페이지 제작이 가능합니다. </span>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="createBox">
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </body>

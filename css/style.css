@@ -92,16 +92,20 @@ a {
   position: absolute;
   top: 65px;
 }
+#skill .inner .showBox #termynal .green {
+  color: green;
+}
 #skill .inner .showBox .tabMenu {
   opacity: 0;
-  -webkit-animation: skill 60s 5.5s ease-in-out;
-          animation: skill 60s 5.5s ease-in-out;
+  -webkit-animation: skill 60s 2.5s ease-in-out;
+          animation: skill 60s 2.5s ease-in-out;
 }
 #skill .inner .showBox .tabMenu input[type=radio] {
   display: none;
 }
 #skill .inner .showBox .tabMenu input[type=radio]:checked + label {
   transform: scale(1.3);
+  color: green;
   text-decoration: underline;
 }
 #skill .inner .showBox .tabMenu input[type=radio]:hover + label {
@@ -334,10 +338,24 @@ a {
   margin: 0 auto;
   display: none;
 }
-#project .inner .showBox .tabMenu .conbox video {
+#project .inner .showBox .tabMenu .conbox .visualBox {
   width: 50%;
   height: 100%;
+}
+#project .inner .showBox .tabMenu .conbox .visualBox video {
+  width: 91%;
+  height: 100%;
   padding: 100px;
+  position: relative;
+  top: 100px;
+  left: 55px;
+}
+#project .inner .showBox .tabMenu .conbox .visualBox img {
+  width: 35%;
+  height: 350px;
+  position: absolute;
+  top: 350px;
+  left: 130px;
 }
 #project .inner .showBox .tabMenu .conbox .projectLink {
   display: flex;
@@ -356,7 +374,7 @@ a {
   padding: 20px;
   position: absolute;
   top: 20%;
-  right: 3%;
+  right: 0%;
   color: #fff;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #projectTextBox .textTitle {
@@ -427,13 +445,28 @@ a {
 }
 
 #about {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #000;
   color: #fff;
 }
 #about .inner {
   width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+#about .inner .showBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+#about .inner .showBox .green {
+  color: green;
+  font-size: 50px;
+}
+#about .inner .showBox span {
+  font-size: 25px;
 }
 
 body {
@@ -584,8 +617,8 @@ body #main .inner .animation span {
   right: 10%;
   font-size: 100px;
   opacity: 0;
-  -webkit-animation: hand 2s 9s normal infinite ease-in-out;
-          animation: hand 2s 9s normal infinite ease-in-out;
+  -webkit-animation: hand 2s 4s normal infinite ease-in-out;
+          animation: hand 2s 4s normal infinite ease-in-out;
 }
 body #main .inner .animation p {
   position: absolute;
@@ -593,8 +626,8 @@ body #main .inner .animation p {
   right: 18%;
   font-size: 50px;
   opacity: 0;
-  -webkit-animation: hand 2s 9s normal infinite ease-in-out;
-          animation: hand 2s 9s normal infinite ease-in-out;
+  -webkit-animation: hand 2s 4s normal infinite ease-in-out;
+          animation: hand 2s 4s normal infinite ease-in-out;
 }
 
 @-webkit-keyframes hand {
