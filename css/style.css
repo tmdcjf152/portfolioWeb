@@ -368,18 +368,18 @@ a {
   color: #fff;
   position: relative;
   left: 35%;
-  bottom: 750px;
+  bottom: 780px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #projectTextBox .textTitle {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #tech {
   margin-top: 30px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #tech .techTtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #tech .techText {
@@ -389,7 +389,7 @@ a {
   margin-top: 30px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #git .gitTtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #git .gitLink {
@@ -402,7 +402,7 @@ a {
   margin-top: 30px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #url .urlTtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #url .urlLink {
@@ -415,7 +415,7 @@ a {
   margin-top: 30px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #language .langTtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 #project .inner .showBox .tabMenu .conbox .textbox #language .langText {
